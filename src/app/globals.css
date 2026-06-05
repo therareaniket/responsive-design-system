@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f7f3d3;
+  --foreground: #040e36;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+
+@font-face {
+    font-family: 'strichpunkt-rg';
+    src: url('../../public/fonts/StrichpunktSans-Regular.woff2') format('woff2'),
+    url('../../public/fonts/StrichpunktSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'strichpunkt-md';
+    src: url('../../public/fonts/StrichpunktSans-Medium.woff2') format('woff2'),
+    url('../../public/fonts/StrichpunktSans-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'strichpunkt-sb';
+    src: url('../../public/fonts/StrichpunktSans-SemiBold.woff2') format('woff2'),
+    url('../../public/fonts/StrichpunktSans-SemiBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'strichpunkt-bd';
+    src: url('../../public/fonts/StrichpunktSans-Bold.woff2') format('woff2'),
+    url('../../public/fonts/StrichpunktSans-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+html, body {
+  	background: var(--background);
+  	color: var(--foreground);
+  	font-family: 'strichpunkt-rg';
+}
+
+.text-rg { font-family: 'strichpunkt-rg'; }
+.text-md { font-family: 'strichpunkt-md'; }
+.text-sb { font-family: 'strichpunkt-sb'; }
+.text-bd { font-family: 'strichpunkt-bd'; }
+
+.container { width: calc(1600px + 36px); padding: 0 18px; margin: 0 auto; }
+
