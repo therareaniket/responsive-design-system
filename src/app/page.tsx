@@ -109,31 +109,25 @@ export default function Home() {
             {/* ── Project info ── */}
             <div className="project-info">
               <div className="project-name">
-                <span className="input-name">Enter Project Name</span>
+                <label htmlFor="projectName" className="input-name">Enter Project Name</label>
                 <input type="text" name="projectName" id="projectName" required />
               </div>
 
               <div className="date">
-                <span className="input-name">Date</span>
-                <input
-                  type="date"
-                  name="date"
-                  id="date"
-                  defaultValue={new Date().toISOString().split("T")[0]}
-                  required
-                />
+                <label htmlFor="date" className="input-name">Date</label>
+                <input type="date" name="date" id="date" defaultValue={new Date().toISOString().split("T")[0]} required />
               </div>
             </div>
 
             {/* ── Container & padding ── */}
             <div className="container-section-pad">
               <div className="container-size">
-                <span className="input-name">Enter Container Size</span>
+                <label htmlFor="containerSize" className="input-name">Enter Container Size</label>
                 <input type="number" name="containerSize" id="containerSize" min="0" required />
               </div>
 
               <div className="section-padding">
-                <span className="input-name">Enter Section Padding</span>
+                <label htmlFor="sectionPadding" className="input-name">Enter Section Padding</label>
                 <input type="number" name="sectionPadding" id="sectionPadding" min="0" required />
               </div>
             </div>
@@ -141,32 +135,32 @@ export default function Home() {
             {/* ── Headings ── */}
             <div className="site-header">
               <div className="site-header1">
-                <span className="input-name">Enter Value of H1</span>
+                <label htmlFor="siteH1" className="input-name">Enter Value of H1</label>
                 <input type="number" name="siteH1" id="siteH1" min="0" required />
               </div>
 
               <div className="site-header2">
-                <span className="input-name">Enter Value of H2</span>
+                <label htmlFor="siteH2" className="input-name">Enter Value of H2</label>
                 <input type="number" name="siteH2" id="siteH2" min="0" required />
               </div>
 
               <div className="site-header3">
-                <span className="input-name">Enter Value of H3</span>
+                <label htmlFor="siteH3" className="input-name">Enter Value of H3</label>
                 <input type="number" name="siteH3" id="siteH3" min="0" required />
               </div>
 
               <div className="site-header4">
-                <span className="input-name">Enter Value of H4</span>
+                <label htmlFor="siteH4" className="input-name">Enter Value of H4</label>
                 <input type="number" name="siteH4" id="siteH4" min="0" required />
               </div>
 
               <div className="site-header5">
-                <span className="input-name">Enter Value of H5</span>
+                <label htmlFor="siteH5" className="input-name">Enter Value of H5</label>
                 <input type="number" name="siteH5" id="siteH5" min="0" required />
               </div>
 
               <div className="site-header6">
-                <span className="input-name">Enter Value of H6</span>
+                <label htmlFor="siteH6" className="input-name">Enter Value of H6</label>
                 <input type="number" name="siteH6" id="siteH6" min="0" required />
               </div>
             </div>
@@ -174,27 +168,27 @@ export default function Home() {
             {/* ── Body & small text ── */}
             <div className="site-texts">
               <div className="body-text">
-                <span className="input-name">Enter Value of Body Text</span>
+                <label htmlFor="bodyText" className="input-name">Enter Value of Body Text</label>
                 <input type="number" name="bodyText" id="bodyText" min="0" required />
               </div>
 
               <div className="body-text">
-                <span className="input-name">Enter Value for Paragraph</span>
+                <label htmlFor="paraText" className="input-name">Enter Value for Paragraph</label>
                 <input type="number" name="paraText" id="paraText" min="0" required />
               </div>
 
               <div className="body-text">
-                <span className="input-name">Small Text (If applied)</span>
+                <label htmlFor="smallText" className="input-name">Small Text (If applied)</label>
                 <input type="number" name="smallText" id="smallText" min="0" />
               </div>
 
               <div className="body-text">
-                <span className="input-name">Small Text 2 (If applied)</span>
+                <label htmlFor="smallText2" className="input-name">Small Text 2 (If applied)</label>
                 <input type="number" name="smallText2" id="smallText2" min="0" />
               </div>
 
               <div className="body-text">
-                <span className="input-name">Small Text 3 (If applied)</span>
+                <label htmlFor="smallText3" className="input-name">Small Text 3 (If applied)</label>
                 <input type="number" name="smallText3" id="smallText3" min="0" />
               </div>
             </div>
@@ -206,11 +200,7 @@ export default function Home() {
               </p>
             )}
 
-            <button
-              type="submit"
-              className={`submit-btn${isLoading ? " loading" : ""}`}
-              disabled={isLoading}
-            >
+            <button type="submit" className={`submit-btn${isLoading ? " loading" : ""}`} disabled={isLoading}>
               {isLoading ? "Calculating…" : "Get Result"}
             </button>
           </form>
