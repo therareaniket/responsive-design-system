@@ -1,41 +1,33 @@
-<<<<<<< HEAD
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🚀 Responsive Design System (RDS)
+Responsive Design System (RDS) is a structured engine that generates breakpoint-based container sizes and typography scales from desktop inputs.
+It enables frontend teams to build consistent, scalable, and fully controlled responsive interfaces using deterministic outputs and reusable design tokens.
 
-## Getting Started
 
-First, run the development server:
+✨ Key Features
+📐 Deterministic Scaling
+Generate predictable values across all breakpoints from a single desktop input.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+🧩 Reusable Design Tokens
+Standardized tokens for typography, spacing, and layout.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+📱 Breakpoint-Based System
+Automatically adapts across screen sizes (1920px → 360px).
+🎯 Design Consistency
+Maintain uniform UI/UX across the entire product.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+⚡ Developer Friendly
+Easy integration with modern stacks (Next.js, React, etc.).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+RDS takes desktop-first values (e.g., font size, container width) and:
+1. Applies structured scaling logic
+2. Generates values for predefined breakpoints
+3. Outputs consistent and reusable tokens
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-=======
-# responsive-design-system
-Responsive Design System(RDS) is a structured engine that generates breakpoint-based container sizes and typography scales from desktop inputs. It provides deterministic outputs, reusable design tokens, and consistent standards for frontend teams to build responsive interfaces with full control.
->>>>>>> c3047194357e96bf63312799a33ee221bd2b10dd
+🛠 Use Cases
+1. Design Systems
+2. UI Frameworks
+3. SaaS Products
+4. Dashboards
+5. Marketing Websites
